@@ -1,3 +1,40 @@
 body {
-	background-color: yellow;
+	font-family: font-family: 'Slabo 27px', serif;
+}
+h1, h2, h3, h4, h5, h6 {font-family: font-family: 'Ubuntu', sans-serif;}
+/*
+	SIDE BAR
+*/
+
+.side-menu {
+	width: 100px;
+	position: fixed;
+	background: #EAEAEA;
+	z-index: 1;
+	height: 100%;
+}
+.main-menu {
+
+}
+.unstyle-list {
+	list-style: none;
+	padding: 0;
+	margin:0;
+}
+.main-menu ul{
+	
+}
+.social-menu {
+
+}
+/********************************
+	MAIN CONTENT
+*/
+.main-content {
+	padding-left: 100px;
+}
+
+section {
+	background: #333;
+	color: #fff;
 }
