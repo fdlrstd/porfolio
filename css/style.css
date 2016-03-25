@@ -1,8 +1,44 @@
 body {
-	font-family: font-family: 'Slabo 27px', serif;
+	font-family: 'Slabo 27px', serif;
 }
-h1, h2, h3, h4, h5, h6 {font-family: font-family: 'Ubuntu', sans-serif;}
-/*
+h1, h2, h3, h4, h5, h6 {font-family:'Ubuntu', sans-serif;}
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+/****************************
+	helper
+*/
+.unstyle-list {
+	list-style: none;
+	padding: 0;
+	margin:0;
+}
+.text-center { text-align: center; }
+/**************************************
+	GRID
+*/
+.row {
+	float: left;
+	margin: 0 40px;
+}
+.col {
+	float: left;
+	padding: 0 15px;
+}
+.col-1 {
+	width: 100%;
+}
+.col-2 {
+	width: 50%;
+}
+.col-2-3 {
+	width: 66.666%;
+}
+.col-3 {
+	width: 33.333%;
+}
+/**************************************
 	SIDE BAR
 */
 
@@ -13,28 +49,108 @@ h1, h2, h3, h4, h5, h6 {font-family: font-family: 'Ubuntu', sans-serif;}
 	z-index: 1;
 	height: 100%;
 }
+.side-menu a {
+	color: #333;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.logo {
+	display: block;
+	text-align: center;
+	position: relative;
+	top: 30px;
+}
 .main-menu {
+	position: relative;
+	transform: rotate(270deg); 
+	top: 90px;
+}
 
-}
-.unstyle-list {
-	list-style: none;
-	padding: 0;
-	margin:0;
-}
+
 .main-menu ul{
+	display: flex;
+	flex-direction: row-reverse;
+}
+.main-menu ul li{
+	margin: 0 10px;
 	
 }
 .social-menu {
-
+	position: absolute;
+	bottom: 30px;
+	text-align: center;
+	width: 100%
 }
-/********************************
+/*****************************************
 	MAIN CONTENT
 */
 .main-content {
 	padding-left: 100px;
 }
 
-section {
+.section {
 	background: #333;
 	color: #fff;
+}
+h2 {
+	text-transform: uppercase;
+	font-weight: 700;
+}
+h3 {
+	margin: 30px 0;
+	font-size: 22px;
+	width: 66%;
+}
+h4 {
+	margin-top: 0;
+	font-weight: 18px;
+	font-weight: 700px;
+	letter-spacing: 1px;
+}
+.underlined-title:after {
+	content: "";
+	display: block;
+	width: 40px;
+	height: 5px;
+	background: #BBB3B3;
+	margin-top: 2px;
+}
+.section a {
+	text-decoration: none;
+	color:#C77070;
+}
+.section a:hover {
+	text-decoration: underline;
+}
+#section-home {
+	background-image: linear-gradient(rgba(208, 197, 193, .5), rgba(191, 184, 191, .5)), url(../images/im1.jpg);
+	color: #333;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center bottom;
+}
+
+
+.main-quotation {
+	margin: 0 30%;
+}
+.main-quotation p{
+	font-size: 34px;
+	margin-bottom: 5px
+}
+.main-quotation footer{
+	text-align: right;
+	font-style: italic;
+}
+
+.section .btn-primary {
+	padding: 10px 20px;
+	background: #864646;
+	color: #fff;
+	border-radius: 4px;
+	box-shadow: 2px 2px 4px rgba(230,219,230,5);
+}
+.section .btn-primary:hover {
+	text-decoration: none;
+	background: #C77070;
 }

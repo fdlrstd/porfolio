@@ -3,42 +3,118 @@
 <head>
 	<meta charset="utf-8">
 	<title>Fidel Jongo - Développeur</title>
+	<!--	 mon vendor-->
 	<link rel="stylesheet" href="css/vendor/jquery.fullpage.css">
 	<link href='https://fonts.googleapis.com/css?family=Slabo+27px|Ubuntu:400,300,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<!--	 mons stylesheet-->
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<aside class="side-menu">
-		<img src="images/logo-02-01.svg" alt="">
+		<a class="logo text-center" href="#home"><img src="images/logo-02-01.svg" alt=""></a>
 	
-	<nav class="main-menu">
-		<ul class="unstyle-list">
-			<li><a href="">Home</a></li>
-			<li><a href="">About</a></li>
-			<li><a href="">Work</a></li>
-			<li><a href="">Contact</a></li>
-		</ul>
-	</nav>
-	<nav class="social-menu">
-		<ul class="unstyle-list">
-			<li><a href="">twitter</a></li>
-			<li><a href="">Github</a></li>
-			<li><a href="">LinkedIn</a></li>
-		</ul>
-	</nav>
+		<nav class="main-menu">
+			<ul class="unstyle-list">
+				<li><a href="#home">Home</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#work">Work</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+		<nav class="social-menu">
+			<ul class="unstyle-list text-center">
+				<li><a href="" target="_blank"><i class="fa fa-twitter"></i>
+					</a>
+				</li>
+				<li><a href="" target="_blank"><i class="fa fa-github"></i>
+					</a>
+				</li>
+				<li><a href="" target="_blank"><i class="fa fa-linkedin"></i>
+					</a>
+				</li>
+			</ul>
+		</nav>
 	</aside>
 	<main id="fullpage" class="main-content">
 		<section id="section-home" class="section">
-			<h2>hello world home</h2>
+			<blockquote class="main-quotation">	
+				<p class="text-center">
+					“La nature est une oeuvre d'art, mais Dieu est le seul artiste qui existe, et l'homme n'est qu'un arrangeur de mauvais goût.” 
+				</p>
+			<footer>- Gorge Sand</footer>
+			</blockquote>
 		</section>
 		<section id="section-about" class="section">
-			<h2>hello world about</h2>
+			<div class="row">
+				<div class="col col-1">
+					<h2 class="underlined-title">About me</h2>
+					<h3>Actuellement developpeur c#</h3>
+				</div>
+				<div class="col col-3">
+					<h4>Etudes</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, recusandae,<a href="#" target="_blank">Esse ab </a> excepturi.<br> Esse ab assumenda, nulla architecto dolor totam, deleniti molestiae aperiam ea quos sapiente, odio quisquam adipisci expedita saepe praesentium.</p>
+				</div>
+				<div class="col col-3">
+					<h4>Mes passions</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, recusandae, excepturi.</p> Esse ab assumenda, nulla architecto dolor totam, deleniti molestiae <p>aperiam ea quos sapiente, odio quisquam adipisci expedita saepe praesentium.</p>
+				</div>
+				<div class="col col-3">
+					<h4>Ma blague</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, recusandae, excepturi. Esse ab assumenda, nulla architecto dolor totam, deleniti molestiae aperiam ea quos sapiente, odio quisquam adipisci expedita saepe praesentium.</p>
+				</div>
+			</div>
 		</section>
 		<section id="section-work" class="section">
-			<h2>hello world work</h2>
+			<div class="row">
+				<div class="col col-1">
+					<h2 class="underlined-title">My work</h2>
+					<h3>J'ai mis tous mon coeur soyez, soyez simpas</h3>
+				</div>
+				<div class="col col-2-3">
+					<h4>Etudes</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, recusandae,<a href="#" target="_blank">Esse ab </a> excepturi.<br> Esse ab assumenda, nulla architecto dolor totam, deleniti molestiae aperiam ea quos sapiente, odio quisquam adipisci expedita saepe praesentium.</p>
+				</div>
+				<div class="col col-3">
+					<h4>King of fighter</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, recusandae, excepturi. Esse ab assumenda, nulla architecto dolor totam, deleniti molestiae aperiam ea quos sapiente, odio quisquam adipisci expedita saepe praesentium.</p>
+					<p>
+						<a class="btn-primary" href="#">
+							voir mon jeu
+						</a>
+					</p>
+				</div>
+			</div>
 		</section>
 		<section id="section-contact" class="section">
-			<h2>hello world contact</h2>
+			<div class="row">
+				<div class="col col-1">
+					<h2 class="underlined-title">Contact</h2>
+					<h3>N'hesitez pas de me joindre pour plus d'information</h3>
+				</div>
+				<div class="col col-2">
+					<h4>Coordonnées</h4>
+					<p>
+						<i class="fa fa-map-marker">
+							Adresse: 
+						</i>
+						<a href="#">
+							 Rue des artisans, n°19 - Ciney
+						</a>
+					</p>
+					<p>
+						<i class="fa fa-phone"></i> 
+						<a href="tel:+32488252147">
+							(0032) 488 25 21 47
+						</a>
+					</p>
+					<p>
+						<i class="fa fa-envelope"></i>
+							 <a href="mailto:san@antonio.net
+?subject=Message de courtoisi&body=Bonjour fidel">  										jongofidel@yahoo.fr
+							 </a>
+					</p>
+				</div>
 		</section>
 	</main>
 	<script src="js/vendor/jquery-1.12.2.min.js"></script>
