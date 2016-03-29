@@ -15,6 +15,10 @@ h1, h2, h3, h4, h5, h6 {font-family:'Ubuntu', sans-serif;}
 	margin:0;
 }
 .text-center { text-align: center; }
+
+.img-responsive {
+	width: 100%;
+}
 /**************************************
 	GRID
 */
@@ -153,4 +157,108 @@ h4 {
 .section .btn-primary:hover {
 	text-decoration: none;
 	background: #C77070;
+}
+.slider-wrapper {
+	overflow: hidden;
+}
+
+.slider {
+	width: 800px;
+}
+
+@media screen and (max-width: 1301px) {
+	.slider {
+		width: 800px;
+	}
+} 
+
+@media screen and (min-width: 1300px) {
+	.slider {
+		width: 900px;
+	}
+} 
+@media screen and (max-width: 900px) {
+	.slider {
+		width: 400px;
+	}
+} 
+
+.slick-dots {
+	list-style: none;
+	margin: 5px 0;
+	padding: 0;
+	text-align: center;
+}
+.slick-dots li {
+	display: inline-block;
+	margin-right: 5px;
+}
+
+.slick-dots li button{
+	font-size: 0;
+	background: #864646;
+	padding: 5px;
+	border: none;
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	color: white;
+	cursor: pointer;
+	outline: 0;
+}
+
+.slick-dots li.slick-active button {
+	background: #C77070;
+	font-size: 5px;
+}
+.btn-toogle-menu{
+	display: none;
+}
+@media screen and (max-width: 600px) {
+	.side-menu {
+		height: 50px;
+		width: 100%;
+	}
+	.logo {
+		position: relative;
+		display: block;
+		top: 10px;
+		float: left;
+		width: 100%;
+	}
+	.main-menu {
+		transform: none;
+		position: relative;
+		float: left;
+		width: 100%;
+		margin-top: 0px;
+		top: 0;
+	}
+	.main-menu ul {
+		display: block;
+		background: white;
+	}
+	.main-content {
+		padding-left: 0;
+	}
+	.social-menu{
+		display: none;
+	}
+	.side-menu a{
+		padding: 10px;
+		display: block;
+	}
+	.hide-menu{
+		display: none;
+	}
+	.btn-toggle-menu{
+		display: block;
+		position: absolute;
+		padding: 10px 20px;
+		right: 0px;
+		top: 10;
+		z-index: 1;
+		font-size: 21px;
+		cursor: pointer;
+	}
 }

@@ -2,10 +2,12 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width" />
 	<title>Fidel Jongo - Développeur</title>
 	<!--	 mon vendor-->
 	<link rel="stylesheet" href="css/vendor/jquery.fullpage.css">
-	<link href='https://fonts.googleapis.com/css?family=Slabo+27px|Ubuntu:400,300,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Slabo+27px|Ubuntu:400,300,700' rel='stylesheet' type='text/css'>	
+	<link rel="stylesheet" type="text/css" href="css/vendor/slick.css"/>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<!--	 mons stylesheet-->
 	<link rel="stylesheet" href="css/style.css">
@@ -13,8 +15,10 @@
 <body>
 	<aside class="side-menu">
 		<a class="logo text-center" href="#home"><img src="images/logo-02-01.svg" alt=""></a>
-	
-		<nav class="main-menu">
+		<div class="btn-toggle-menu">
+			<i class="fa fa-bars"></i>	
+		</div>
+		<nav class="main-menu hide-menu">
 			<ul class="unstyle-list">
 				<li><a href="#home">Home</a></li>
 				<li><a href="#about">About</a></li>
@@ -72,8 +76,19 @@
 					<h3>J'ai mis tous mon coeur soyez, soyez simpas</h3>
 				</div>
 				<div class="col col-2-3">
-					<h4>Etudes</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, recusandae,<a href="#" target="_blank">Esse ab </a> excepturi.<br> Esse ab assumenda, nulla architecto dolor totam, deleniti molestiae aperiam ea quos sapiente, odio quisquam adipisci expedita saepe praesentium.</p>
+				  <div class="slider-wrapper">
+					<div class="slider">
+					  <div>
+						<img class="img-responsive" src="images/game2.jpg" alt="">
+					  </div>
+					  <div>
+					  	<img class="img-responsive" src="images/game1.jpg" alt="">
+					  </div>
+					  <div>
+					  	<img class="img-responsive" src="images/game1.jpg" alt="">
+					  </div>
+					</div>	
+					</div>			
 				</div>
 				<div class="col col-3">
 					<h4>King of fighter</h4>
